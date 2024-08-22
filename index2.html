@@ -27,9 +27,16 @@
             setStatus();
             btn.value = getStatus();
         }
+        function enviar2(obj){
+            setStatus();
+            obj.value = getStatus();
+        }
     </script>
 </head>
 <body>
     <input id="btnAlarme" type="button" value="desligado" onclick="enviar();">
+    <br><br>
+    <input id="btnAlarme2" type="button" value="desligado" onclick="enviar2(this);">
+
 </body>
 </html>
