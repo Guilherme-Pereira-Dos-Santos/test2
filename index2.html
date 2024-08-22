@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let status = "desligado"
+        function setStatus()
+        {
+            if (status == "ligado")
+            {
+                status = "desligado"
+            }
+            else
+            {
+                status = "ligado"
+            }
+        }
+        
+        function getStatus(){
+            return status;
+        }
+
+        function enviar(){
+            btn = document.getElementById("btnAlarme");
+            setStatus();
+            btn.value = getStatus();
+        }
+    </script>
+</head>
+<body>
+    <input id="btnAlarme" type="button" value="desligado" onclick="enviar();">
+</body>
+</html>
